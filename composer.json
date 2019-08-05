@@ -1,11 +1,30 @@
 {
+
     "name": "rungis-mrs/odessa_extension",
     "type": "typo3-cms-extension",
     "description": "MRS Enterprise site big description",
     "homepage": "https://www.mrs-electronic.de/",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
-    "version": "1.0.0",
+    "version": "1.2.3",
+	"repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.typo3.org/"
+        },
+        {
+            "type":"package",
+            "package": {
+              "name": "rungis-mrs/odessa_extension",
+              "version":"master",
+              "source": {
+                  "url": "https://github.com/rungis-mrs/odessa_extension.git",
+                  "type": "git",
+                  "reference":"dev-master"
+                }
+            }
+        }
+    ],
     "require": {
         "typo3/cms-core": "^9.5",
         "typo3/cms-rte-ckeditor": "^9.5",
